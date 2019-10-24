@@ -1,4 +1,4 @@
-# 本项目基于Laravel 5.6的项目初始化
+# 本项目基于Laravel 5.8的项目初始化
 
 ## 基础依赖
 * PHP >= 7.1.3
@@ -11,9 +11,7 @@
 * JSON PHP Extension
 
 ## 功能特性
-* 前后端分离架构
 * password token机制,拥有单用户登录(默认关闭，去事件里开启就行了)
-* 三个环境的基础配置文件
 
 
 ## 环境部署
@@ -37,7 +35,3 @@ php artsian passport:client --password
 
 migration之类按需自己去修改
 
-## TODO
-* 增加新功能测试
-* 七牛云公共token
-* 省市区统一接口
