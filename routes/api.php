@@ -30,7 +30,7 @@ Route::group(['prefix' => 'v1'], function () {
         Route::group(['prefix' => 'user'], function () {
             // 测试接口，用户获取登录用户基本信息
             Route::get('/info', function () {
-                return \EcareYu\Services\UtilService::response('读取成功', Auth::user());
+                return \Project\Services\UtilService::response('读取成功', Auth::user());
             });
         });
     });

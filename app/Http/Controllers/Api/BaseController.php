@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use EcareYu\Services\HandleService as Handle;
-use EcareYu\Services\UtilService as Util;
+use Project\Services\HandleService as Handle;
+use Project\Services\UtilService as Util;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Validation\Validator;
@@ -26,7 +26,7 @@ class BaseController extends Controller
      * 处理表单验证报错
      *
      * @param Validator $validator
-     * @throws \EcareYu\Exceptions\ApiException
+     * @throws \Project\Exceptions\ApiException
      */
     protected function validatorErrors(Validator $validator)
     {
@@ -50,7 +50,7 @@ class BaseController extends Controller
      *
      * @param $code
      * @param array $values
-     * @throws \EcareYu\Exceptions\ApiException
+     * @throws \Project\Exceptions\ApiException
      */
     protected function thrown($code, $values = [])
     {

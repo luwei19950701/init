@@ -1,7 +1,7 @@
 <?php
 /**
  * 错误编码定义处.
- * User: ecareyu
+ * User: smile
  * Date: 2018/6/20
  * Time: 15:43
  */

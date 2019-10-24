@@ -1,15 +1,15 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: EcareYu
+ * User: smile
  * Date: 2017/9/27
  * Time: 16:51
  */
 
-namespace EcareYu\Services;
+namespace Project\Services;
 
-use EcareYu\Exceptions\ApiException;
-use EcareYu\Services\UtilService as Util;
+use Project\Exceptions\ApiException;
+use Project\Services\UtilService as Util;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Validation\Validator;
 use Exception;

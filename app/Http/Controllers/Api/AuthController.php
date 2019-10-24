@@ -13,7 +13,7 @@ class AuthController extends BaseController
      *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
-     * @throws \EcareYu\Exceptions\ApiException
+     * @throws \Project\Exceptions\ApiException
      */
     public function token(Request $request)
     {
@@ -46,7 +46,7 @@ class AuthController extends BaseController
      *
      * @param Request $request
      * @return \Illuminate\Http\JsonResponse
-     * @throws \EcareYu\Exceptions\ApiException
+     * @throws \Project\Exceptions\ApiException
      */
     public function refreshToken(Request $request)
     {
@@ -96,7 +96,7 @@ class AuthController extends BaseController
      * 请求access token
      *
      * @return mixed
-     * @throws \EcareYu\Exceptions\ApiException
+     * @throws \Project\Exceptions\ApiException
      */
     protected function requestAccessToken()
     {

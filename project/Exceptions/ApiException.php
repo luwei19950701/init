@@ -1,6 +1,6 @@
 <?php
 
-namespace EcareYu\Exceptions;
+namespace Project\Exceptions;
 
 use Exception;
 use Throwable;

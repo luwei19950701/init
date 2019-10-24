@@ -1,14 +1,14 @@
 <?php
 /**
  * 工具服务.
- * User: EcareYu
+ * User: smile
  * Date: 2017/9/27
  * Time: 16:52
  */
 
-namespace EcareYu\Services;
+namespace Project\Services;
 
-use EcareYu\Exceptions\ApiException;
+use Project\Exceptions\ApiException;
 
 class UtilService
 {
@@ -91,14 +91,4 @@ class UtilService
         throw new ApiException(self::error($code, $values), $code);
     }
 
-    /**
-     * 格式化金钱输出
-     *
-     * @param $price
-     * @return string
-     */
-    public static function priceFormat($price)
-    {
-        return bcdiv(bcmul($price, 100, 0), 100, 2);
-    }
 }
