@@ -19,18 +19,19 @@ class AuthController extends BaseController
     {
         // 表单验证
         $validator = \Validator::make($request->all(), [
-            'name' => 'required|min:2',
+            'phone' => 'required|min:11|max:11',
             'password' => 'required',
         ], [
-            'name.required' => $this->ruleMsg(Code::E_AUTH_NAME_REQUIRED),
-            'name.min' => $this->ruleMsg(Code::E_AUTH_NAME_MIN_LENGTH),
+            'phone.required' => $this->ruleMsg(Code::E_AUTH_NAME_REQUIRED),
+            'phone.min' => $this->ruleMsg(Code::E_AUTH_PHONE_LENGTH_ERROR),
+            'phone.max' => $this->ruleMsg(Code::E_AUTH_PHONE_LENGTH_ERROR),
             'password.required' => $this->ruleMsg(Code::E_AUTH_PASSWORD_REQUIRED),
         ]);
 
         $this->validatorErrors($validator);
 
         $credentials = [
-            'name' => $request->name,
+            'phone' => $request->phone,
             'password' => $request->password,
         ];
 
@@ -106,7 +107,7 @@ class AuthController extends BaseController
 
         $tokenParams = [
             'grant_type' => 'password',
-            'username' => $request->name,
+            'username' => $request->phone,
             'password' => $request->password,
             'client_id' => $oauthClient->id,
             'client_secret' => $oauthClient->secret,

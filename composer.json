@@ -9,9 +9,10 @@
         "barryvdh/laravel-cors": "^0.11.0",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.8.*",
-        "laravel/passport": "^6.0",
+        "laravel/passport": "^7.0",
         "laravel/tinker": "^1.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "ext-json": "*"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^2.4",
