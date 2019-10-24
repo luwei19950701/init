@@ -36,7 +36,7 @@ class BaseController extends Controller
     /**
      * 验证规则信息
      *
-     * @param $code 错误编号
+     * @param string $code 错误编号
      * @param array $values
      * @return array
      */
